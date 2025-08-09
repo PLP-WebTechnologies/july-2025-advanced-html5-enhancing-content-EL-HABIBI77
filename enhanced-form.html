@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML</h1>
+    <p>This HTML consist of Lists, table, media(Image, audio and video) and a validated form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Skills that I am learning</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+      </ul>
+      <h3>Why HTML is easy</h3>
+      <ol>
+        <li>Simple</li>
+        <li>Instant visual result</li>
+        <li>Low setup needed</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Project timeline</h2>
+      <table border="1">
+        <thead>
+          <tr><th>Student no.</th><th>Name</th><th>Gender</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>001</td><td>Abdulhafidh</td><td>Male</td></tr>
+          <tr><td>002</td><td>Mercy</td><td>Female</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <video src="https://youtube.com/shorts/cBKx_X6yuvY?si=0qpDhWpui9tEErOl" controls autoplay>HTML video</video>
+      <h2>Image</h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500" height="300" alt="Picture of a house" />
+      </figure>
+
+      <!-- We add audio here -->
+      <figure>
+        <h2>Audio</h2>
+        <audio controls>
+          <source src="https://youtu.be/aqLUvpAdLNQ?si=XY6_luc51lbLI127" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal info</legend>
+          <label for="name">Full name
+            <input id="name" name="name" type="text" placeholder="Abdulhafidh Ahmed" autocomplete="name" required>
+          </label><br>
+          <label for="email">Email
+            <input id="email" name="email" type="email" placeholder="abdulhafidhahmad12@gmail.com" autocomplete="email" required>
+          </label><br>
+          <label for="phone">Phone
+            <input id="phone" name="phone" type="tel" placeholder="0793808040"
+                   pattern="\d{10}" title="Enter 10 digits" required>
+          </label><br>
+          <label for="dob">Date of birth
+            <input id="dob" name="dob" type="date" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account</legend>
+          <label>Username
+            <input name="username" type="text" minlength="5" maxlength="15" autocomplete="username" required>
+          </label><br>
+          <label>Password
+            <input name="password" type="password" minlength="8" required>
+          </label><br>
+          <label>Role
+            <select name="role" required>
+              <option value="">--Select role--</option>
+              <option value="dev">Software Developer</option>
+              <option value="des">Data Administarator</option>
+              <option value="pm">User</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>More Info</legend>      
+          <label for="bio">Short bio
+            <textarea id="bio" name="bio" rows="3" minlength="10" placeholder="Tell us about you.." required></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Read-only</legend>
+          <label>Referral code
+            <input type="text" value="JOBHUNT001" readonly aria-readonly="true">
+          </label>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Enhanced HTML assignment</p>
+  </footer>
+</body>
+</html>
